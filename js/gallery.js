@@ -86,7 +86,7 @@ const images = [
   a.forEach(a => a.addEventListener("click", (e) => {
     e.preventDefault();
     const modal = basicLightbox.create(
-        `<img src= "${e.target.dataset.source}" width="800" height="600">`)
+        `<img class="modal-img" src= "${e.target.dataset.source}">`)
 
     modal.show();
 
